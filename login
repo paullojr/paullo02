@@ -1,54 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tela de longin</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, green,yellow)
-        }
-        div{background-color: rgba(0, 0, 0, 0.8);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 80px;
-            border-radius: 15px;
-            color: beige;
-            }
-            input{
-                padding: 15px;
-                border:none ;
-                outline: none;
-                font-size: 15px;
-
-                            }
-                            button{
-                                background-color: blue;
-                                border: none;
-                                padding: 15px;
-                                width: 100%;
-                                border-radius: 10px;
-                                color:aliceblue;
-                                font-size: 15px;
-                            }
-                        button:hover{
-                            background-color: rgba(0, 255, 255, 0.541);
-                            
-                        }
-    </style>
+    <title>login</title>
 </head>
+
+<style>
+
+
+    *{
+
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    form{
+        width: 300px;
+        margin: 200px auto;
+        text-align: center;
+
+    }
+    input{
+        display: block;
+        margin:10px auto;
+        width: 250px;
+        right: 30px auto;
+    }
+</style>
 <body>
-    <div>
-        <h1> <!---login e senha -->
-            login
-        </h1>
-        <input type="text" placeholder="nome" ><br><br> <!---nome do longin-->
-        <input type="password" placeholder="senha"><!---senha --><br><br>
-        <button>enviar</button>
-    </div>
+     <form >
+
+
+<h3>login</h3>
+<input type="text" placeholder="login" id="login">
+<input type="password" placeholder="senha" id="senha">
+<input type="submit" onclick="logar()>
+
+
+
+     </form>
+    
+<script>
+
+function logar(){
+
+    var login = document.getElementByid('login').value;
+    var senha = document.getElementByid('senha').value;
+    if (login == "teste  && senha = "1234") {
+        aler(pressão);
+    }
+    
+    
+}
+
+
+</script>
+
 </body>
 </html>
